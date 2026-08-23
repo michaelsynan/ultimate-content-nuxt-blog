@@ -20,6 +20,7 @@
     "@takumi-rs/core": "^2.10.0",
     "better-sqlite3": "^13.0.3",
     "nuxt": "^4.5.2",
+    "nuxt-studio": "1.7.0",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {

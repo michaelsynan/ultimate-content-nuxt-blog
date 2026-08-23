@@ -110,13 +110,23 @@ function formatDate(date: string) {
       id="newsletter"
       class="pb-16 sm:pb-24"
     >
-      <UPageCTA
-        title="Make it your own."
-        description="Replace these example posts with your own writing, then tailor the navigation, colors, and calls to action for your audience."
-        :links="[{ label: 'Start publishing', to: '#latest', icon: 'i-lucide-arrow-up-right' }]"
-        variant="subtle"
-        :ui="{ title: 'font-serif' }"
-      />
+      <div class="grid gap-8 md:grid-cols-2">
+        <UPageCTA
+          title="Explore Local Businesses"
+          description="Discover cafés, shops, and services in our community. Browse our business directory to find trusted local establishments."
+          :links="[{ label: 'View directory', to: '/businesses', icon: 'i-lucide-store' }]"
+          variant="subtle"
+          :ui="{ title: 'font-serif text-2xl' }"
+        />
+
+        <UPageCTA
+          title="Make it your own."
+          description="Replace these example posts with your own writing, then tailor the navigation, colors, and calls to action for your audience."
+          :links="[{ label: 'Start publishing', to: '#latest', icon: 'i-lucide-arrow-up-right' }]"
+          variant="subtle"
+          :ui="{ title: 'font-serif text-2xl' }"
+        />
+      </div>
     </UContainer>
   </div>
 </template>

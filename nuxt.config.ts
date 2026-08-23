@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     '@nuxt/hints',
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    'nuxt-studio'
   ],
 
   devtools: {

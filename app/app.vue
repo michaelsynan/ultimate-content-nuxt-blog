@@ -40,7 +40,8 @@ useSeoMeta({
             { label: 'Latest', to: '/' },
             { label: 'Articles', to: '/#latest' },
             { label: 'Guides', to: '/#latest' },
-            { label: 'Ideas', to: '/#latest' }
+            { label: 'Ideas', to: '/#latest' },
+            { label: 'Businesses', to: '/businesses' }
           ]"
           class="hidden lg:flex"
         />

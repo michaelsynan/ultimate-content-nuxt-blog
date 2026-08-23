@@ -10,10 +10,10 @@ export default defineNuxtConfig({
   ],
   studio: {
     repository: {
-      provider: "github", // 'github' or 'gitlab'
-      owner: "michaelsynan",
-      repo: "ultimate-content-blog",
-      branch: "main",
+      provider: process.env.NUXT_STUDIO_REPOSITORY_PROVIDER || "github",
+      owner: process.env.NUXT_STUDIO_REPOSITORY_OWNER || "",
+      repo: process.env.NUXT_STUDIO_REPOSITORY_REPO || "",
+      branch: process.env.NUXT_STUDIO_REPOSITORY_BRANCH || "main",
     },
   },
 
@@ -28,10 +28,6 @@ export default defineNuxtConfig({
       name: "page",
       mode: "out-in",
     },
-  },
-
-  routeRules: {
-    "/": { prerender: true },
   },
 
   compatibilityDate: "2026-06-30",

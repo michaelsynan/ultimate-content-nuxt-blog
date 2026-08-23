@@ -1,49 +1,57 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui',
-    '@nuxt/content',
-    '@nuxt/hints',
-    '@nuxtjs/seo',
-    'nuxt-studio'
+    "@nuxt/eslint",
+    "@nuxt/ui",
+    "@nuxt/content",
+    "@nuxt/hints",
+    "@nuxtjs/seo",
+    "nuxt-studio",
   ],
-
-  devtools: {
-    enabled: true
+  studio: {
+    repository: {
+      provider: "github", // 'github' or 'gitlab'
+      owner: "michaelsynan",
+      repo: "ultimate-content-blog",
+      branch: "main",
+    },
   },
 
-  css: ['~/assets/css/main.css'],
+  devtools: {
+    enabled: true,
+  },
+
+  css: ["~/assets/css/main.css"],
 
   app: {
-    pageTransition: { 
-      name: 'page', 
-      mode: 'out-in' 
-    }
+    pageTransition: {
+      name: "page",
+      mode: "out-in",
+    },
   },
 
   routeRules: {
-    '/': { prerender: true }
+    "/": { prerender: true },
   },
 
-  compatibilityDate: '2026-06-30',
+  compatibilityDate: "2026-06-30",
 
   eslint: {
     config: {
       stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
+        commaDangle: "never",
+        braceStyle: "1tbs",
+      },
+    },
   },
 
   fonts: {
     families: [
       {
-        name: 'JetBrains Mono',
-        provider: 'google',
-        weights: ['400 700']
-      }
-    ]
-  }
-})
+        name: "JetBrains Mono",
+        provider: "google",
+        weights: ["400 700"],
+      },
+    ],
+  },
+});

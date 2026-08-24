@@ -70,9 +70,11 @@ useSeoMeta({
         </div>
 
         <aside class="space-y-6">
-          <UCard :ui="{
-            body: 'space-y-4'
-          }">
+          <UCard
+            :ui="{
+              body: 'space-y-4'
+            }"
+          >
             <h3 class="font-serif text-lg font-bold text-highlighted">
               Contact Information
             </h3>
@@ -81,8 +83,12 @@ useSeoMeta({
               <div class="flex items-start gap-3">
                 <span class="i-lucide-map-pin mt-0.5 shrink-0 text-primary" />
                 <div>
-                  <p class="font-medium text-highlighted">Address</p>
-                  <p class="text-muted">{{ business.address }}</p>
+                  <p class="font-medium text-highlighted">
+                    Address
+                  </p>
+                  <p class="text-muted">
+                    {{ business.address }}
+                  </p>
                 </div>
               </div>
 
@@ -92,8 +98,12 @@ useSeoMeta({
               >
                 <span class="i-lucide-phone mt-0.5 shrink-0 text-primary" />
                 <div>
-                  <p class="font-medium text-highlighted">Phone</p>
-                  <p class="text-muted">{{ business.phone }}</p>
+                  <p class="font-medium text-highlighted">
+                    Phone
+                  </p>
+                  <p class="text-muted">
+                    {{ business.phone }}
+                  </p>
                 </div>
               </div>
 
@@ -103,7 +113,9 @@ useSeoMeta({
               >
                 <span class="i-lucide-globe mt-0.5 shrink-0 text-primary" />
                 <div>
-                  <p class="font-medium text-highlighted">Website</p>
+                  <p class="font-medium text-highlighted">
+                    Website
+                  </p>
                   <UButton
                     :to="business.website"
                     target="_blank"
@@ -122,8 +134,12 @@ useSeoMeta({
               >
                 <span class="i-lucide-clock mt-0.5 shrink-0 text-primary" />
                 <div>
-                  <p class="font-medium text-highlighted">Hours</p>
-                  <p class="text-muted">{{ business.hours }}</p>
+                  <p class="font-medium text-highlighted">
+                    Hours
+                  </p>
+                  <p class="text-muted">
+                    {{ business.hours }}
+                  </p>
                 </div>
               </div>
             </div>

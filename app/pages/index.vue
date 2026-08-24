@@ -77,7 +77,7 @@ function formatDate(date: string) {
             <span
               class="rounded-full bg-default/85 px-3 py-1 font-mono text-[11px] font-medium tracking-[0.12em] text-highlighted uppercase backdrop-blur"
             >
-              {{posts?.find(item => item.path === post.to)?.category}}
+              {{ posts?.find(item => item.path === post.to)?.category }}
             </span>
           </div>
         </template>
@@ -92,7 +92,7 @@ function formatDate(date: string) {
           <div
             class="flex items-center justify-between border-t border-default p-2 font-mono text-[11px] tracking-[0.08em] text-muted uppercase"
           >
-            <span>By {{posts?.find(item => item.path === post.to)?.author}}</span>
+            <span>By {{ posts?.find(item => item.path === post.to)?.author }}</span>
             <span class="font-medium text-primary">Read story →</span>
           </div>
         </template>

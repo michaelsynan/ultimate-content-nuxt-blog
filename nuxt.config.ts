@@ -44,7 +44,7 @@ export default defineNuxtConfig({
   },
   studio: {
     repository: {
-      provider: process.env.NUXT_STUDIO_REPOSITORY_PROVIDER || 'github',
+      provider: (process.env.NUXT_STUDIO_REPOSITORY_PROVIDER || 'github') as 'github' | 'gitlab',
       owner: process.env.NUXT_STUDIO_REPOSITORY_OWNER || '',
       repo: process.env.NUXT_STUDIO_REPOSITORY_REPO || '',
       branch: process.env.NUXT_STUDIO_REPOSITORY_BRANCH || 'main'
